@@ -15,13 +15,13 @@ To install this package, simply run `go get github.com/michaelokuboyejo/go_jusib
 	package main
 
 	import (
-		"github.com/michaelokuboyejo/go_jusibe"
+		"github.com/michaelokuboyejo/gojusibe"
 	)
 
 	func main() {
 		publicKey := "yourPublicKey"
-		accessToken  := "yourAccessToken"
-		twilio := jusibe.JusibeClient(publicKey, accessToken)
+		accessToken := "yourAccessToken"
+		jusibe := gojusibe.JusibeClient(publicKey, accessToken)
 
 		//sendSMS
 		from := "Spiderman"

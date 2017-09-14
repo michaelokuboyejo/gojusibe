@@ -1,4 +1,4 @@
-package go_jusibe
+package gojusibe
 
 import (
 	"encoding/json"

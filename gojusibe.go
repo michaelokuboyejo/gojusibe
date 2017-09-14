@@ -1,4 +1,4 @@
-package go_jusibe
+package gojusibe
 
 import (
 	"net/http"
@@ -15,6 +15,11 @@ type Jusibe struct {
 }
 
 func JusibeClient(publicKey, accessToken string, HTTPClient *http.Client) *Jusibe {
+
+	return JusibeClientCustomHttp(publicKey, accessToken, nil)
+}
+
+func JusibeClientCustomHttp(publicKey, accessToken string, HTTPClient *http.Client) *Jusibe {
 
 	if HTTPClient == nil {
 		HTTPClient = http.DefaultClient
